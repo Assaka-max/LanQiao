@@ -9,7 +9,7 @@ bool check(double mid){
   double sum = mid * p;
   for(int i = 1; i <= n; i++){
     if(a[i]*mid < b[i]) continue;
-    sum -= (b[i] - a[i]*mid);
+    sum -= (a[i]*mid - b[i]);
   }
   if(sum >= 0) return true;
   else return false;
