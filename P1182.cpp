@@ -17,7 +17,6 @@ int check(int mid){
     }else{
       sum += a[i];
     }
-
   }
   if(graph > m) return 1;
   else return 0;
