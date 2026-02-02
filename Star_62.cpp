@@ -28,7 +28,7 @@ int main(){
   }
 
   long long ans = 0;
-  for(int i = 1; i <= n; i++) ans += a[i] * (r[i] * l[i]);
+  for(int i = 1; i <= n; i++) ans += 1LL * a[i] * l[i] * r[i];
   cout << ans;
   return 0;
 }
