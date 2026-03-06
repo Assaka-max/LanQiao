@@ -4,9 +4,11 @@
 using namespace std;
 
 int partition(vector<int> &vec, int left, int right){
+  //找出基准位置与基准元素
   int mid = left + (right - left)/2;
   int pivot = vec[mid];
 
+  //把基准元素移动到最右端并确定"小于区域"
   swap(vec[mid], vec[right]);
   int i = left;
 
